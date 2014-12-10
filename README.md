@@ -22,30 +22,30 @@ http://localhost:8080/security-poc/api/getListOfEmployees.json
 
 #####INPUT
 ```sh
-	http://localhost:8080/security-poc/oauth/token?grant_type=password&client_id=restapp&client_secret=restapp&username=sandeep&password=123
+http://localhost:8080/security-poc/oauth/token?grant_type=password&client_id=restapp&client_secret=restapp&username=sandeep&password=123
 ```
 
 #####OUTPUT
 ```sh
-	{
-		access_token: "4f09fa81-d3da-41c4-9a7d-eacaef531c72"
-		token_type: "bearer"
-		refresh_token: "2e317a4a-7413-4d9f-a995-7b50aef50786"
-		expires_in: 119
-	}
+{
+	access_token: "4f09fa81-d3da-41c4-9a7d-eacaef531c72"
+	token_type: "bearer"
+	refresh_token: "2e317a4a-7413-4d9f-a995-7b50aef50786"
+	expires_in: 119
+}
 ```
 
 ###Step 3
 #####INPUT
 ```sh
-	http://localhost:8080/security-poc/api/getListOfEmployees.json?access_token=4f09fa81-d3da-41c4-9a7d-eacaef531c72
+http://localhost:8080/security-poc/api/getListOfEmployees.json?access_token=4f09fa81-d3da-41c4-9a7d-eacaef531c72
 ```
 
 #####OUTPUT
 ```sh
-	{
-	    "employees": [
-	        {
+{
+	"employees": [
+		{
 	            "empName": "Sandeep",
 	            "empEmail": "sandeep@mail.com",
 	            "empSalary": "1222"
@@ -55,6 +55,6 @@ http://localhost:8080/security-poc/api/getListOfEmployees.json
 	            "empEmail": "rupam@mail.com",
 	            "empSalary": "1333"
 	        }
-	    ]
-	}
+    	]
+}
 ```
