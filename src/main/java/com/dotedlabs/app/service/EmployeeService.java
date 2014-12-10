@@ -18,5 +18,10 @@ import com.dotedlabs.app.model.EmployeeVO;
  */
 public interface EmployeeService {
 
+	/**
+	 * Method to get the list of all services
+	 * 
+	 * @return
+	 */
 	public EmployeeVO getAllEmployees();
 }
