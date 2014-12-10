@@ -12,7 +12,7 @@ The following process describes how to run this application
 	```
 	
 	OUTPUT
-	```sh
+	```js
 		{
 			error: "unauthorized"
 			error_description: "An Authentication object was not found in the SecurityContext"
@@ -36,7 +36,7 @@ OUTPUT
 	}
 ```
 
-Step 3
+* Step 3
 INPUT
 ```sh
 	http://localhost:8080/security-poc/api/getListOfEmployees.json?access_token=4f09fa81-d3da-41c4-9a7d-eacaef531c72
