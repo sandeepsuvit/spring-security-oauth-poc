@@ -7,16 +7,16 @@ The following process describes how to run this application
 
 ###Step 1
 #####INIPUT
-	```sh
-		http://localhost:8080/security-poc/api/getListOfEmployees.json
-	```
+```sh
+http://localhost:8080/security-poc/api/getListOfEmployees.json
+```
 #####OUTPUT
-	```sh
-		{
-			error: "unauthorized"
-			error_description: "An Authentication object was not found in the SecurityContext"
-		}
-	```
+```sh
+{
+	error: "unauthorized"
+	error_description: "An Authentication object was not found in the SecurityContext"
+}
+```
 	
 ###Step 2
 
