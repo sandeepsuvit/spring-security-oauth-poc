@@ -5,13 +5,13 @@ This is a POC showcasing Spring's integration with OAUTH
 
 The following process describes how to run this application
 
-* Step 1
-	INIPUT
+##Step 1
+	#####INIPUT
 	```sh
 		http://localhost:8080/security-poc/api/getListOfEmployees.json
 	```
 	
-	OUTPUT
+	#####OUTPUT
 	```js
 		{
 			error: "unauthorized"
@@ -19,14 +19,14 @@ The following process describes how to run this application
 		}
 	```
 	
-* Step 2
+##Step 2
 
-INPUT
+#####INPUT
 ```sh
 	http://localhost:8080/security-poc/oauth/token?grant_type=password&client_id=restapp&client_secret=restapp&username=sandeep&password=123
 ```
 
-OUTPUT
+#####OUTPUT
 ```sh
 	{
 		access_token: "4f09fa81-d3da-41c4-9a7d-eacaef531c72"
@@ -36,13 +36,13 @@ OUTPUT
 	}
 ```
 
-* Step 3
-INPUT
+##Step 3
+#####INPUT
 ```sh
 	http://localhost:8080/security-poc/api/getListOfEmployees.json?access_token=4f09fa81-d3da-41c4-9a7d-eacaef531c72
 ```
 
-OUTPUT
+#####OUTPUT
 ```sh
 	{
 	    "employees": [
