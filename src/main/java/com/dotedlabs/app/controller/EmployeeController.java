@@ -27,9 +27,18 @@ import com.dotedlabs.app.service.EmployeeService;
 @Controller
 @RequestMapping("/api")
 public class EmployeeController {
+	
+	/**
+	 * Autowire the service dependency to this class
+	 */
 	@Autowired
 	private EmployeeService employeeService;
 
+	/**
+	 * Service to get the list of employee details
+	 * 
+	 * @return
+	 */
 	@RequestMapping(value = "/getListOfEmployees", method = RequestMethod.GET, produces = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
 	ResponseEntity<EmployeeListVO> getAllContacts() {
