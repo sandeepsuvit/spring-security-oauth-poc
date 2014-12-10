@@ -26,14 +26,18 @@ import com.dotedlabs.app.service.EmployeeService;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
+	/**
+	 * This method acts as a data-aggregation section and provides the data
+	 * whenever requested.
+	 */
 	@Override
 	public EmployeeListVO getAllEmployees() {
 		EmployeeListVO employeeListVO = new EmployeeListVO();
 		List<Employee> employees = new ArrayList<Employee>();
-		
+
 		employees.add(new Employee("Sandeep", "sandeep@mail.com", "1222"));
 		employees.add(new Employee("Rupam", "rupam@mail.com", "1333"));
-		
+
 		employeeListVO.setEmployees(employees);
 		return employeeListVO;
 	}
