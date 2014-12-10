@@ -5,21 +5,20 @@ This is a POC showcasing Spring's integration with OAUTH
 
 The following process describes how to run this application
 
-##Step 1
-	#####INIPUT
+###Step 1
+#####INIPUT
 	```sh
 		http://localhost:8080/security-poc/api/getListOfEmployees.json
 	```
-	
-	#####OUTPUT
-	```js
+#####OUTPUT
+	```sh
 		{
 			error: "unauthorized"
 			error_description: "An Authentication object was not found in the SecurityContext"
 		}
 	```
 	
-##Step 2
+###Step 2
 
 #####INPUT
 ```sh
@@ -36,7 +35,7 @@ The following process describes how to run this application
 	}
 ```
 
-##Step 3
+###Step 3
 #####INPUT
 ```sh
 	http://localhost:8080/security-poc/api/getListOfEmployees.json?access_token=4f09fa81-d3da-41c4-9a7d-eacaef531c72
