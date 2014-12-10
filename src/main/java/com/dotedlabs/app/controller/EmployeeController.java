@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.dotedlabs.app.model.EmployeeVO;
+import com.dotedlabs.app.model.EmployeeListVO;
 import com.dotedlabs.app.service.EmployeeService;
 /**
  * 
@@ -32,8 +32,8 @@ public class EmployeeController {
 
 	@RequestMapping(value = "/getListOfEmployees", method = RequestMethod.GET, produces = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
-	ResponseEntity<EmployeeVO> getAllContacts() {
-		return new ResponseEntity<EmployeeVO>(
+	ResponseEntity<EmployeeListVO> getAllContacts() {
+		return new ResponseEntity<EmployeeListVO>(
 				employeeService.getAllEmployees(), HttpStatus.OK);
 	}
 }

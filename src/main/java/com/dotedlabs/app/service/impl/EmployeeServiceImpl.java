@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.dotedlabs.app.model.Employee;
-import com.dotedlabs.app.model.EmployeeVO;
+import com.dotedlabs.app.model.EmployeeListVO;
 import com.dotedlabs.app.service.EmployeeService;
 
 /**
@@ -27,15 +27,15 @@ import com.dotedlabs.app.service.EmployeeService;
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
-	public EmployeeVO getAllEmployees() {
-		EmployeeVO employeeVO = new EmployeeVO();
+	public EmployeeListVO getAllEmployees() {
+		EmployeeListVO employeeListVO = new EmployeeListVO();
 		List<Employee> employees = new ArrayList<Employee>();
 		
 		employees.add(new Employee("Sandeep", "sandeep@mail.com", "1222"));
 		employees.add(new Employee("Rupam", "rupam@mail.com", "1333"));
 		
-		employeeVO.setEmployees(employees);
-		return employeeVO;
+		employeeListVO.setEmployees(employees);
+		return employeeListVO;
 	}
 
 }

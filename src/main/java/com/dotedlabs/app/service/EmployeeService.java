@@ -1,6 +1,6 @@
 package com.dotedlabs.app.service;
 
-import com.dotedlabs.app.model.EmployeeVO;
+import com.dotedlabs.app.model.EmployeeListVO;
 
 /**
  * 
@@ -23,5 +23,5 @@ public interface EmployeeService {
 	 * 
 	 * @return
 	 */
-	public EmployeeVO getAllEmployees();
+	public EmployeeListVO getAllEmployees();
 }
